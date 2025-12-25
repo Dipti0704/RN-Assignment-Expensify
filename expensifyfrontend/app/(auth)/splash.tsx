@@ -43,7 +43,7 @@ export default function Splash() {
       >
         <View style={styles.logoContainer}>
           <View style={styles.iconCircle}>
-            <Ionicons name="wallet-outline" size={72} color={Colors.white} />
+            <Ionicons name="wallet-outline" size={72} color={Colors.secondary} />
           </View>
         </View>
 
@@ -66,7 +66,7 @@ export default function Splash() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.primary,
+    backgroundColor: Colors.black,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -81,34 +81,36 @@ const styles = StyleSheet.create({
     width: 140,
     height: 140,
     borderRadius: 70,
-    backgroundColor: 'rgba(255, 255, 255, 0.15)',
+    backgroundColor: Colors.primaryLight,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 3,
-    borderColor: 'rgba(255, 255, 255, 0.3)',
+    borderColor: Colors.secondary,
   },
   title: {
     fontSize: FontSizes.xxxl,
     fontWeight: 'bold',
-    color: Colors.white,
+    color: Colors.secondary,
     marginBottom: Spacing.xs,
     letterSpacing: 1,
   },
   subtitle: {
     fontSize: FontSizes.lg,
-    color: 'rgba(255, 255, 255, 0.85)',
+    color: Colors.gray,
     marginBottom: Spacing.xl,
   },
   tagline: {
     marginTop: Spacing.lg,
     paddingHorizontal: Spacing.lg,
     paddingVertical: Spacing.sm,
-    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    backgroundColor: Colors.primaryLight,
     borderRadius: 20,
+    borderWidth: 1,
+    borderColor: Colors.secondary,
   },
   taglineText: {
     fontSize: FontSizes.sm,
-    color: 'rgba(255, 255, 255, 0.9)',
+    color: Colors.secondary,
     letterSpacing: 2,
     fontWeight: '500',
   },
@@ -118,7 +120,7 @@ const styles = StyleSheet.create({
     width: 250,
     height: 250,
     borderRadius: 125,
-    backgroundColor: 'rgba(255, 255, 255, 0.08)',
+    backgroundColor: 'rgba(255, 215, 0, 0.05)',
     top: -80,
     right: -80,
   },
@@ -127,7 +129,7 @@ const styles = StyleSheet.create({
     width: 180,
     height: 180,
     borderRadius: 90,
-    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    backgroundColor: 'rgba(255, 215, 0, 0.03)',
     bottom: 80,
     left: -60,
   },
@@ -136,7 +138,7 @@ const styles = StyleSheet.create({
     width: 120,
     height: 120,
     borderRadius: 60,
-    backgroundColor: 'rgba(255, 255, 255, 0.07)',
+    backgroundColor: 'rgba(255, 215, 0, 0.04)',
     bottom: 150,
     right: 40,
   },

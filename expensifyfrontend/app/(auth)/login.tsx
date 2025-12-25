@@ -53,7 +53,7 @@ export default function Login() {
         {/* Header Section */}
         <View style={styles.header}>
           <View style={styles.iconContainer}>
-            <Ionicons name="wallet-outline" size={56} color={Colors.primary} />
+            <Ionicons name="wallet-outline" size={56} color={Colors.secondary} />
           </View>
           <Text style={styles.title}>Welcome Back!</Text>
           <Text style={styles.subtitle}>Sign in to continue tracking</Text>
@@ -125,11 +125,11 @@ export default function Login() {
             disabled={loading}
           >
             {loading ? (
-              <ActivityIndicator color={Colors.white} />
+              <ActivityIndicator color={Colors.black} />
             ) : (
               <>
                 <Text style={styles.buttonText}>Sign In</Text>
-                <Ionicons name="arrow-forward" size={20} color={Colors.white} />
+                <Ionicons name="arrow-forward" size={20} color={Colors.black} />
               </>
             )}
           </TouchableOpacity>
@@ -159,7 +159,7 @@ export default function Login() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.background,
+    backgroundColor: Colors.black,
   },
   scrollContent: {
     flexGrow: 1,
@@ -178,11 +178,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: Spacing.lg,
+    borderWidth: 2,
+    borderColor: Colors.secondary,
   },
   title: {
     fontSize: FontSizes.xxl,
     fontWeight: 'bold',
-    color: Colors.black,
+    color: Colors.secondary,
     marginBottom: Spacing.xs,
   },
   subtitle: {
@@ -199,13 +201,13 @@ const styles = StyleSheet.create({
   label: {
     fontSize: FontSizes.sm,
     fontWeight: '600',
-    color: Colors.black,
+    color: Colors.secondary,
     marginBottom: Spacing.xs,
   },
   inputContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.primaryLight,
     borderRadius: BorderRadius.md,
     paddingHorizontal: Spacing.md,
     height: 56,
@@ -218,7 +220,7 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     fontSize: FontSizes.md,
-    color: Colors.black,
+    color: Colors.white,
   },
   forgotPassword: {
     alignSelf: 'flex-end',
@@ -226,18 +228,18 @@ const styles = StyleSheet.create({
   },
   forgotText: {
     fontSize: FontSizes.sm,
-    color: Colors.primary,
+    color: Colors.secondary,
     fontWeight: '600',
   },
   button: {
     flexDirection: 'row',
-    backgroundColor: Colors.primary,
+    backgroundColor: Colors.secondary,
     borderRadius: BorderRadius.md,
     height: 56,
     justifyContent: 'center',
     alignItems: 'center',
     gap: Spacing.sm,
-    shadowColor: Colors.primary,
+    shadowColor: Colors.secondary,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
     shadowRadius: 8,
@@ -247,7 +249,7 @@ const styles = StyleSheet.create({
     opacity: 0.6,
   },
   buttonText: {
-    color: Colors.white,
+    color: Colors.black,
     fontSize: FontSizes.lg,
     fontWeight: '600',
   },
@@ -277,7 +279,7 @@ const styles = StyleSheet.create({
   },
   linkText: {
     fontSize: FontSizes.md,
-    color: Colors.primary,
+    color: Colors.secondary,
     fontWeight: '600',
   },
 });

@@ -1,22 +1,22 @@
 export const Colors = {
-  // Primary - Teal/Cyan gradient theme
-  primary: '#14B8A6',
-  primaryLight: '#99F6E4',
-  primaryDark: '#0D9488',
+  // Primary - Black & Gold theme
+  primary: '#544c4cff',        // Pure Black
+  primaryLight: '#1F1F1F',   // Dark Gray
+  primaryDark: '#151414ff',
   
-  // Secondary - Orange accent
-  secondary: '#F97316',
-  secondaryLight: '#FED7AA',
+  // Secondary - Gold accent
+  secondary: '#FFD700',      // Gold
+  secondaryLight: '#FFF4CC', // Light Gold
   
   // Neutrals
-  background: '#F9FAFB',
+  background: '#0A0A0A',     // Almost Black
   white: '#FFFFFF',
-  black: '#1F2937',
+  black: '#000000',
   
   // Grays
-  gray: '#6B7280',
-  grayLight: '#E5E7EB',
-  grayDark: '#374151',
+  gray: '#9CA3AF',
+  grayLight: '#2D2D2D',
+  grayDark: '#171717',
   
   // Status colors
   success: '#10B981',
@@ -24,47 +24,47 @@ export const Colors = {
   warning: '#F59E0B',
   info: '#3B82F6',
   
-  // Category colors - Different from PocketExpense+
+  // Category colors - Updated for dark theme
   categories: {
     Food: { 
-      bg: '#FEE2E2', 
-      icon: '#EF4444', 
-      color: '#DC2626' 
+      bg: '#2D1B1B', 
+      icon: '#FF6B6B', 
+      color: '#FF6B6B' 
     },
     Transport: { 
-      bg: '#D1FAE5', 
-      icon: '#10B981', 
-      color: '#059669' 
+      bg: '#1B2D1F', 
+      icon: '#4ECDC4', 
+      color: '#4ECDC4' 
     },
     Shopping: { 
-      bg: '#DBEAFE', 
-      icon: '#3B82F6', 
-      color: '#2563EB' 
+      bg: '#1B1B2D', 
+      icon: '#95A5F6', 
+      color: '#95A5F6' 
     },
     Entertainment: { 
-      bg: '#FCE7F3', 
-      icon: '#EC4899', 
-      color: '#DB2777' 
+      bg: '#2D1B2D', 
+      icon: '#F78FB3', 
+      color: '#F78FB3' 
     },
     Bills: { 
-      bg: '#FEF3C7', 
-      icon: '#F59E0B', 
-      color: '#D97706' 
+      bg: '#2D2B1B', 
+      icon: '#FFB84D', 
+      color: '#FFB84D' 
     },
     Health: { 
-      bg: '#CFFAFE', 
-      icon: '#06B6D4', 
-      color: '#0891B2' 
+      bg: '#1B2D2D', 
+      icon: '#4DD4F7', 
+      color: '#4DD4F7' 
     },
     Education: { 
-      bg: '#EDE9FE', 
-      icon: '#8B5CF6', 
-      color: '#7C3AED' 
+      bg: '#251B2D', 
+      icon: '#B794F6', 
+      color: '#B794F6' 
     },
     Other: { 
-      bg: '#F3F4F6', 
+      bg: '#2D2D2D', 
       icon: '#9CA3AF', 
-      color: '#6B7280' 
+      color: '#9CA3AF' 
     }
   }
 };
@@ -99,23 +99,23 @@ export const BorderRadius = {
 
 export const Shadows = {
   small: {
-    shadowColor: '#000',
+    shadowColor: '#FFD700',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 3,
     elevation: 2,
   },
   medium: {
-    shadowColor: '#000',
+    shadowColor: '#FFD700',
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.15,
+    shadowOpacity: 0.2,
     shadowRadius: 6,
     elevation: 4,
   },
   large: {
-    shadowColor: '#000',
+    shadowColor: '#FFD700',
     shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.2,
+    shadowOpacity: 0.3,
     shadowRadius: 12,
     elevation: 8,
   }
